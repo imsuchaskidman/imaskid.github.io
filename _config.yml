@@ -1,0 +1,180 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaehz</title>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: #000;
+    background-image: url('https://i.imgur.com/MvEU87l.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    padding: 40px 60px 40px 0;
+    animation: fadeIn 0.8s ease forwards;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .title {
+    font-family: 'Ephesis', cursive;
+    font-size: 72px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+    animation: fadeIn 0.6s ease forwards;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 340px;
+  }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 22px;
+    background: rgba(45, 45, 45, 0.82);
+    border: 1.5px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 0.18s, border-color 0.18s, transform 0.15s, box-shadow 0.18s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .link-btn:nth-child(1) { animation: slideIn 0.5s 0.2s ease both; }
+  .link-btn:nth-child(2) { animation: slideIn 0.5s 0.35s ease both; }
+  .link-btn:nth-child(3) { animation: slideIn 0.5s 0.5s ease both; }
+  .link-btn:nth-child(4) { animation: slideIn 0.5s 0.65s ease both; }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .link-btn:hover {
+    background: rgba(70, 70, 70, 0.92);
+    border-color: rgba(255,255,255,0.38);
+    transform: translateX(-4px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+
+  .link-btn:active {
+    transform: translateX(-2px) scale(0.98);
+  }
+
+  .link-btn img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+
+  .watermark {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.55);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 2px;
+    animation: fadeIn 1s 0.8s ease both;
+    white-space: nowrap;
+  }
+
+  /* Mobile */
+  @media (max-width: 600px) {
+    body {
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 60px;
+      overflow-y: auto;
+    }
+
+    .panel {
+      align-items: center;
+      padding: 0 20px 80px 20px;
+      max-width: 100%;
+    }
+
+    .title {
+      font-size: 56px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .links {
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .link-btn {
+      font-size: 14px;
+      padding: 16px 18px;
+    }
+
+    .link-btn:hover {
+      transform: none;
+    }
+
+    .link-btn:active {
+      transform: scale(0.97);
+      background: rgba(70, 70, 70, 0.92);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="panel">
+  <div class="title">Chronus</div>
+  <div class="links">
+
+    <a class="link-btn" href="https://steamcommunity.com/id/chronostatistic" target="_blank" rel="noopener">
+      <img src="https://simpleicons.org/icons/steam.svg" alt="Steam">
+      @vaehz
+    </a>
+
+    <a class="link-btn" href="https://www.roblox.com/users/7923010154/profile" target="_blank" rel="noopener">
+      <img src="https://cdn.simpleicons.org/roblox/ffffff" alt="Roblox">
+      my block lad
+    </a>
+
+  </div>
+</div>
+
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;fb02adeaf7084849bef8bc79218862fd&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+</body></html>
